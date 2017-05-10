@@ -22,9 +22,9 @@ RShellBase.cc
 RShellBase.hh
 RShellContainer.cc
 RShellContainer.hh
-
 ```
 
 Bugs
 ----
-Currently Unknown
+-RShellContainer.clear() does not actually clear memory since the vectors contain pointers.
+-Issues with execution when '#' is the first char.

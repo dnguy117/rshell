@@ -1,3 +1,5 @@
 ls -l
-echo hello world
-mk dir test
+echo hello world!
+mkdir test
+ls -l
+echo hello             world!

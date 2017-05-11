@@ -1,8 +1,8 @@
 CC = g++
-CFLAGS = -Wall -c -Werror 
-DEBUG = CFLAGS += -g
+CFLAGS = -Wall -c -Werror -ansi -pedantic
+DEBUG = $(CFLAGS) += -ggdb
 
-all:main RShellBase Command Connector RShellContainer
+all: main RShellBase Command Connector RShellContainer
 	mkdir -p bin
 	$(CC) $(CFLAGS) main.o RShellBase.o Command.o Connector.o RShellContainer.o -o ./bin/rshell
   

@@ -22,4 +22,4 @@ RShellContainerContainer:
 	$(CC) $(CFLAGS) ./src/RShellContainer.cc
  
 clean:
-  rm -r *.o
+	rm -r *.o

@@ -18,7 +18,7 @@ Command:
 Connector:
 	$(CC) $(CFLAGS) ./src/Connector.cc
 
-RShellContainerContainer:
+RShellContainer:
 	$(CC) $(CFLAGS) ./src/RShellContainer.cc
  
 clean:

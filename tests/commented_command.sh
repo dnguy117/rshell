@@ -1,2 +1,2 @@
 #!/bin/sh
-./bin/rshell < tests/testComment
+./bin/rshell < tests/commented_command

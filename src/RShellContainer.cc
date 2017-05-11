@@ -95,7 +95,7 @@ void RShellContainer::execute() {
     bool cntPass = true;
     
     for (unsigned i = 0; i < Commands.size(); i++) {
-        if ((cmpstr(Commands.at(i)->getArr()[0], "exit") == 0)) {
+        if ((strcmp(Commands.at(i)->getArr()[0], "exit") == 0)) {
             exit(1);
         }
         

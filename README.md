@@ -29,3 +29,5 @@ Bugs
 Memory leak with RShellContainer.clear(); does not actually clear memory since the vectors contain pointers.
 
 Issues with execution when '#' is the first char.
+
+Test cases loop the last line endlessly.

@@ -26,6 +26,6 @@ RShellContainer.hh
 
 Bugs
 -----
-RShellContainer.clear() does not actually clear memory since the vectors contain pointers.
+Memory leak with RShellContainer.clear(); does not actually clear memory since the vectors contain pointers.
 
 Issues with execution when '#' is the first char.

@@ -31,8 +31,6 @@ void RShellContainer::addConnector(Connector * connect) {
 // Parse userInput into a commands vector and a connectors vector
 void RShellContainer::parse() {
     string tempStr;
-    char * tempCstr;
-    int strSize;
     
     if (userInput.length() == 0) {                                              // Empty input string
         return;
@@ -97,7 +95,7 @@ void RShellContainer::execute() {
     bool cntPass = true;
     
     for (unsigned i = 0; i < Commands.size(); i++) {
-        if (Commands.at(i)->getArr()[0] == "exit") {
+        if ((cmpstr(Commands.at(i)->getArr()[0], "exit") == 0)) {
             exit(1);
         }
         
